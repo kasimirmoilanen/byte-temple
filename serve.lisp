@@ -14,9 +14,6 @@
 (defun start ()
   (hunchentoot:start *server*))
 
-(defun stop ()
-  (hunchentoot:stop *server*))
-
 (hunchentoot:define-easy-handler (main :uri "/")
     ()
   (spinneret:with-html-string
